@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа 4</title>
+    <style>
+        body {
+            background-color: #fff0f5;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #ff69b4;
+            text-align: center;
+            border-bottom: 3px dashed #ff69b4;
+            padding-bottom: 10px;
+        }
+        .nav {
+            text-align: center;
+            margin: 20px;
+            padding: 15px;
+            background: #e6e6fa;
+            border-radius: 10px;
+        }
+        .nav a {
+            margin: 0 15px;
+            padding: 8px 20px;
+            background: #9370db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .photo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .photo-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .photo-item img {
+            border: 3px solid #9370db;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body bgcolor="#fff0f5">
+    <marquee behavior="scroll" direction="left" scrollamount="3" bgcolor="#ffb6c1" height="30" hspace="20" vspace="10">
+        Мои любимые фотографии! 
+    </marquee>
+
+    <div class="nav">
+        <h2>Навигация</h2>
+        <a href="22lab.html">Биография</a>
+        <a href="laba33.html">Предметы</a>
+    </div>
+
+    <h1>Мои любимые фотографии</h1>
+    <div style="text-align: center; margin: 30px; padding: 20px; background: #f8f8ff; border-radius: 10px;">
+        <h3>Адаптивное фото (меняется при разном размере экрана)</h3>
+        <picture>
+            <source media="(min-width: 800px)" srcset="https://moya-planeta.ru/upload/images/l/eb/e2/ebe21cb5a55a808b104f3d51c3ff96284bae5182.jpg">
+            <source media="(min-width: 520px)" srcset="https://balthazar.club/o/uploads/posts/2023-10/1696626984_balthazar-club-p-ochen-krasivaya-priroda-mira-pinterest-1.jpg">
+            <img src="https://img.freepik.com/premium-photo/karersee-reflecting-latemar-mountain-forest-sunny-summer-day_242111-43500.jpg?semt=ais_hybrid&w=740&q=80" 
+                 alt="Адаптивное фото"
+                 width="400"
+                 height="500"
+                 border="2">
+        </picture>
+        <p><small>Это фото меняется в зависимости от размера экрана.</small></p>
+    </div>
+
+    <div class="photo-container">
+        <div class="photo-item">
+            <h3>Моя кошка</h3>
+            <img src="https://i.postimg.cc/7LBn8nYz/7p.jpg" 
+                 alt="Моя кошка Боня"
+                 width="250"
+                 height="300"
+                 hspace="10"
+                 vspace="10">
+            <p>Это моя любимая кошка Боня. Она очень любит спать на клавиатуре, когда я занимаюсь учебой и ходить везде за мной.</p>
+            <p><small>Фото сделано: 15.01.2024</small></p>
+        </div>
+
+        <div class="photo-item">
+            <h3>Прогулка в парке</h3>
+            <img src="https://i.postimg.cc/7LLSVJMq/3p.jpg" 
+                 alt="Колесо обозрения"
+                 width="250"
+                 height="300"
+                 hspace="10"
+                 vspace="10"
+                 align="middle">
+            <p>Это фото колеса обозрения в парке ВДНХ.</p>
+            <p><small>Фото сделано: 01.08.2023</small></p>
+        </div>
+        <div class="photo-item">
+            <h3>Радуга</h3>
+            <img src="https://i.postimg.cc/JzrXrHFf/2p.jpg" 
+                 alt="Радуга"
+                 width="250"
+                 height="300"
+                 name="rainbow"
+                 alt="Красивый вид из окна"
+                 border="3"
+                 hspace="5"
+                 vspace="5">
+            <p>Такой красивый вид из окна я запечатлила после дождя.</p>
+            <p><em>Изображение имеет имя: view</em></p>
+        </div>
+        <div class="photo-item">
+            <h3>Новый год</h3>
+            <img src="https://i.postimg.cc/WbjF8JTB/1p.jpg" 
+                 alt="Елка"
+                 width="250"
+                 height="300"
+                 lowsrc="https://i.postimg.cc/JnZ0cRgP/11.jpg"
+                 alt="Загрузка фото елки">
+            <p>Такую красивую елку поставили в прошлом году в Парке Горького</p>
+            <p><small>Сначала загружается маленькая версия, потом большая</small></p>
+        </div>
+    </div>
+    <marquee behavior="alternate" direction="right" scrollamount="5" height="40" loop="3" truespeed>
+        Спасибо за просмотр моих фотографий!
+    </marquee>
+
+    <div style="text-align: center; margin-top: 40px; padding: 20px; background: #9370db; color: white;">
+        <p>Студентка: Милена Евлоева | Группа: 251-364 | 2025 год</p>
+    </div>
+</body>
+</html>
